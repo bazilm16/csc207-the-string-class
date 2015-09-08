@@ -3,6 +3,7 @@ import java.lang.Integer;
 public class Calc {
 
 	public static int add (String line){
+		line.replace(" ","");
 		String[] arr = line.split("\\+");
 		int sum = 0;
 		for (int i = 0; i < arr.length; i++)
